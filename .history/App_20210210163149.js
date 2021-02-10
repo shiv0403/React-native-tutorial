@@ -30,8 +30,6 @@ export default function App() {
           style={styles.input}
           placeholder="e.g. shivansh gupta"
           keyboardType="email-address"
-          multiline
-          onChangeText={(val) => SetName(val)}
         />
       </View>
     </View>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   const [name, SetName] = useState("Alice");
@@ -25,15 +25,6 @@ export default function App() {
       <View style={styles.button}>
         <Button title="Click Me" onPress={handleClick} />
       </View>
-      <View>
-        <TextInput
-          style={styles.input}
-          placeholder="e.g. shivansh gupta"
-          keyboardType="email-address"
-          multiline
-          onChangeText={(val) => SetName(val)}
-        />
-      </View>
     </View>
   );
 }
@@ -47,11 +38,5 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
-  },
-  input: {
-    borderColor: "#000000",
-    padding: 10,
-    margin: 20,
-    width: 200,
   },
 });

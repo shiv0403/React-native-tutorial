@@ -31,7 +31,6 @@ export default function App() {
           placeholder="e.g. shivansh gupta"
           keyboardType="email-address"
           multiline
-          onChangeText={(val) => SetName(val)}
         />
       </View>
     </View>

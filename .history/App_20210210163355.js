@@ -11,7 +11,6 @@ export default function App() {
   const handleClick = () => {
     SetName("John");
     setDetails({
-      name: "Topper",
       age: "19",
     });
   };

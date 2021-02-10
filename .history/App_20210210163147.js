@@ -26,13 +26,7 @@ export default function App() {
         <Button title="Click Me" onPress={handleClick} />
       </View>
       <View>
-        <TextInput
-          style={styles.input}
-          placeholder="e.g. shivansh gupta"
-          keyboardType="email-address"
-          multiline
-          onChangeText={(val) => SetName(val)}
-        />
+        <TextInput style={styles.input} placeholder="e.g. shivansh gupta" keyboardType="email-address/>
       </View>
     </View>
   );

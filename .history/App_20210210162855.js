@@ -26,13 +26,7 @@ export default function App() {
         <Button title="Click Me" onPress={handleClick} />
       </View>
       <View>
-        <TextInput
-          style={styles.input}
-          placeholder="e.g. shivansh gupta"
-          keyboardType="email-address"
-          multiline
-          onChangeText={(val) => SetName(val)}
-        />
+        <TextInput style={styles.input} />
       </View>
     </View>
   );
@@ -49,9 +43,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   input: {
-    borderColor: "#000000",
-    padding: 10,
-    margin: 20,
-    width: 200,
+    borderColor: "gray",
   },
 });

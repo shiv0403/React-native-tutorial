@@ -1,19 +1,15 @@
 import React, { useState } from "react";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
-  const [name, SetName] = useState("Alice");
+  const [name, SetName] = useState("Shivansh");
   const [details, setDetails] = useState({
     name: "Gango",
     age: "20",
   });
 
   const handleClick = () => {
-    SetName("John");
-    setDetails({
-      name: "Topper",
-      age: "19",
-    });
+    SetName("Poorvi");
   };
 
   return (
@@ -24,15 +20,6 @@ export default function App() {
       </Text>
       <View style={styles.button}>
         <Button title="Click Me" onPress={handleClick} />
-      </View>
-      <View>
-        <TextInput
-          style={styles.input}
-          placeholder="e.g. shivansh gupta"
-          keyboardType="email-address"
-          multiline
-          onChangeText={(val) => SetName(val)}
-        />
       </View>
     </View>
   );
@@ -47,11 +34,5 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
-  },
-  input: {
-    borderColor: "#000000",
-    padding: 10,
-    margin: 20,
-    width: 200,
   },
 });
