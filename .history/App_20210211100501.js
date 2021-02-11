@@ -5,7 +5,6 @@ import {
   StyleSheet,
   TouchableWithoutFeedback,
   View,
-  Keyboard,
 } from "react-native";
 import AddTodo from "./components/AddTodo";
 import Header from "./components/Header";
@@ -39,11 +38,7 @@ export default function App() {
   };
 
   return (
-    <TouchableWithoutFeedback
-      onPress={() => {
-        Keyboard.dismiss();
-      }}
-    >
+    <TouchableWithoutFeedback>
       <View style={styles.container}>
         <Header />
         <View style={styles.content}>
