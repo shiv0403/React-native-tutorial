@@ -29,7 +29,7 @@ export default function App() {
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
-        <AddTodo handleSubmit={handleSubmit} />
+        <AddTodo />
         <View style={styles.list}>
           <FlatList
             data={todo}

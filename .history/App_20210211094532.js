@@ -19,17 +19,11 @@ export default function App() {
     });
   };
 
-  const handleSubmit = (text) => {
-    setTodo((todos) => {
-      return [{ text: text, key: Math.random().toString() }, ...todos];
-    });
-  };
-
   return (
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
-        <AddTodo handleSubmit={handleSubmit} />
+        <AddTodo />
         <View style={styles.list}>
           <FlatList
             data={todo}
