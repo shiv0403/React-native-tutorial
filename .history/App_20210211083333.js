@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Button,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
 
 export default function App() {
   const [people, setPeople] = useState([
@@ -33,6 +41,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     marginTop: 30,
     padding: 20,
+    // alignItems: "center",
+    // justifyContent: "center",
   },
   text: {
     backgroundColor: "pink",
