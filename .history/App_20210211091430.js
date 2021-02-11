@@ -41,8 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-  },
-  list: {
-    margin: 20,
+    padding: 20,
   },
 });

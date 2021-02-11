@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
   FlatList,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
-import Header from "./components/Header";
 
 export default function App() {
   const [todo, setTodo] = useState([
@@ -19,17 +19,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Header />
+      {/* header */}
       <View style={styles.content}>
         {/* to form */}
         <View style={styles.list}>
-          <FlatList
-            data={todo}
-            keyExtractor={(item) => item.key}
-            renderItem={({ item }) => {
-              return <Text>{item.text}</Text>;
-            }}
-          />
+          <FlatList />
         </View>
       </View>
     </View>
@@ -41,8 +35,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-  },
-  list: {
-    margin: 20,
+    padding: 20,
   },
 });

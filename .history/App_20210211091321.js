@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import Header from "./components/Header";
+import { Header } from "react-native/Libraries/NewAppScreen";
 
 export default function App() {
   const [todo, setTodo] = useState([
@@ -41,8 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-  },
-  list: {
-    margin: 20,
+    padding: 20,
   },
 });

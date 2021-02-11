@@ -42,7 +42,4 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     marginTop: 30,
   },
-  list: {
-    margin: 20,
-  },
 });
