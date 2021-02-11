@@ -21,9 +21,6 @@ export default function App() {
 
   const handleDelete = (id) => {
     console.log(id);
-    setPeople((people) => {
-      return people.filter((item) => item.key != id);
-    });
   };
 
   return (

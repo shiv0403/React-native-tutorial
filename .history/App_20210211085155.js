@@ -19,13 +19,6 @@ export default function App() {
     { name: "dhiren", key: "7" },
   ]);
 
-  const handleDelete = (id) => {
-    console.log(id);
-    setPeople((people) => {
-      return people.filter((item) => item.key != id);
-    });
-  };
-
   return (
     <View style={styles.container}>
       <FlatList
@@ -33,7 +26,7 @@ export default function App() {
         keyExtractor={(item) => item.key}
         data={people}
         renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => handleDelete(item.key)}>
+          <TouchableOpacity onPress={() => handleDelete(id)}>
             <Text style={styles.text}>{item.name}</Text>
           </TouchableOpacity>
         )}

@@ -19,13 +19,6 @@ export default function App() {
     { name: "dhiren", key: "7" },
   ]);
 
-  const handleDelete = (id) => {
-    console.log(id);
-    setPeople((people) => {
-      return people.filter((item) => item.key != id);
-    });
-  };
-
   return (
     <View style={styles.container}>
       <FlatList
