@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import Header from "./components/Header";
 import TodoItem from "./components/TodoItem";
 
@@ -12,12 +18,6 @@ export default function App() {
     { text: "sleep", key: "5" },
   ]);
 
-  const handleDelete = (key) => {
-    setTodo((todos) => {
-      return todos.filter((todo) => todo.key != key);
-    });
-  };
-
   return (
     <View style={styles.container}>
       <Header />
@@ -28,7 +28,7 @@ export default function App() {
             data={todo}
             keyExtractor={(item) => item.key}
             renderItem={({ item }) => {
-              return <TodoItem item={item} handleDelete={handleDelete} />;
+              return <TodoItem />;
             }}
           />
         </View>

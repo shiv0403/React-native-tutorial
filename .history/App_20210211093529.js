@@ -28,7 +28,7 @@ export default function App() {
             data={todo}
             keyExtractor={(item) => item.key}
             renderItem={({ item }) => {
-              return <TodoItem item={item} handleDelete={handleDelete} />;
+              return <TodoItem item={item} />;
             }}
           />
         </View>
