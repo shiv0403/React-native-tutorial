@@ -14,12 +14,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <FlatList
-        numColumns={2}
-        keyExtractor={(item) => item.key}
-        data={people}
-        renderItem={({ item }) => <Text style={styles.text}>{item.name}</Text>}
-      />
+      <FlatList keyExtractor={(item) => item.id} />
     </View>
   );
 }
