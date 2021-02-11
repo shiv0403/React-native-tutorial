@@ -40,6 +40,7 @@ export default function App() {
   };
 
   return (
+    // <Flex />
     <TouchableWithoutFeedback
       onPress={() => {
         Keyboard.dismiss();
@@ -66,16 +67,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-    flex: 1,
-  },
-  content: {
-    flex: 1,
   },
   list: {
     margin: 20,
-    marginTop: 0,
     flex: 1,
   },
 });

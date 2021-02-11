@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
   addTodo: {
     marginTop: 20,
     marginLeft: 20,
-    marginRight: 20,
+    marginRight: 20
     flex: 0.5,
   },
   input: {
-    width: "100%",
+    width: 200,
     fontSize: 18,
     padding: 20,
   },

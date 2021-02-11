@@ -68,14 +68,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
     marginTop: 30,
-    flex: 1,
   },
   content: {
-    flex: 1,
+    display: "flex",
   },
   list: {
     margin: 20,
-    marginTop: 0,
-    flex: 1,
   },
 });

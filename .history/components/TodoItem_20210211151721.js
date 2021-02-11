@@ -7,7 +7,7 @@ export default function TodoItem({ item, handleDelete }) {
     <TouchableOpacity onPress={() => handleDelete(item.key)}>
       <View style={styles.item}>
         <MaterialIcons name="delete" size={24} color="black" />
-        <Text style={styles.item_text}>{item.text}</Text>
+        <Text>{item.text}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -24,8 +24,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: "center",
     flexDirection: "row",
-  },
-  item_text: {
-    marginLeft: 20,
   },
 });

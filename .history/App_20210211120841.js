@@ -40,6 +40,7 @@ export default function App() {
   };
 
   return (
+    // <Flex />
     <TouchableWithoutFeedback
       onPress={() => {
         Keyboard.dismiss();
@@ -48,7 +49,7 @@ export default function App() {
       <View style={styles.container}>
         <Header />
         <View style={styles.content}>
-          <AddTodo handleSubmit={handleSubmit} />
+          <AddTodo style={styles.form} handleSubmit={handleSubmit} />
           <View style={styles.list}>
             <FlatList
               data={todo}
@@ -66,16 +67,14 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-    flex: 1,
-  },
-  content: {
-    flex: 1,
   },
   list: {
     margin: 20,
-    marginTop: 0,
+  },
+  form: {
     flex: 1,
   },
 });

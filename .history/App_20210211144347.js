@@ -75,7 +75,6 @@ const styles = StyleSheet.create({
   },
   list: {
     margin: 20,
-    marginTop: 0,
     flex: 1,
   },
 });

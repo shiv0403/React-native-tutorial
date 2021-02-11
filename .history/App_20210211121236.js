@@ -48,7 +48,7 @@ export default function App() {
       <View style={styles.container}>
         <Header />
         <View style={styles.content}>
-          <AddTodo handleSubmit={handleSubmit} />
+          <AddTodo style={styles.form} handleSubmit={handleSubmit} />
           <View style={styles.list}>
             <FlatList
               data={todo}
@@ -68,14 +68,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
     marginTop: 30,
-    flex: 1,
   },
-  content: {
-    flex: 1,
-  },
+  content: {},
   list: {
     margin: 20,
-    marginTop: 0,
     flex: 1,
   },
+  form: {},
 });

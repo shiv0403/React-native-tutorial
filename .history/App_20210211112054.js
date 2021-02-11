@@ -40,42 +40,38 @@ export default function App() {
   };
 
   return (
-    <TouchableWithoutFeedback
-      onPress={() => {
-        Keyboard.dismiss();
-      }}
-    >
-      <View style={styles.container}>
-        <Header />
-        <View style={styles.content}>
-          <AddTodo handleSubmit={handleSubmit} />
-          <View style={styles.list}>
-            <FlatList
-              data={todo}
-              keyExtractor={(item) => item.key}
-              renderItem={({ item }) => {
-                return <TodoItem item={item} handleDelete={handleDelete} />;
-              }}
-            />
-          </View>
-        </View>
-      </View>
-    </TouchableWithoutFeedback>
+    <Flex />
+    // <TouchableWithoutFeedback
+    //   onPress={() => {
+    //     Keyboard.dismiss();
+    //   }}
+    // >
+    //   <View style={styles.container}>
+    //     <Header />
+    //     <View style={styles.content}>
+    //       <AddTodo handleSubmit={handleSubmit} />
+    //       <View style={styles.list}>
+    //         <FlatList
+    //           data={todo}
+    //           keyExtractor={(item) => item.key}
+    //           renderItem={({ item }) => {
+    //             return <TodoItem item={item} handleDelete={handleDelete} />;
+    //           }}
+    //         />
+    //       </View>
+    //     </View>
+    //   </View>
+    // </TouchableWithoutFeedback>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "#fff",
     marginTop: 30,
-    flex: 1,
-  },
-  content: {
-    flex: 1,
   },
   list: {
     margin: 20,
-    marginTop: 0,
-    flex: 1,
   },
 });
